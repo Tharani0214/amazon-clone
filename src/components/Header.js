@@ -19,41 +19,41 @@ function Header() {
     <div className="header">
       <Link to="/">
         <img
-          className="header__logo"
+          className="header-logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
         />
       </Link>
 
-      <div className="header__search">
-        <input className="header__searchInput" type="text" />
-        <SearchIcon className="header__searchIcon" />
+      <div className="header-search">
+        <input className="header-searchInput" type="text" />
+        <SearchIcon className="header-searchIcon" />
       </div>
 
       <div className="header__nav">
         <Link to={!user && '/login'}>
-          <div onClick={handleAuthenticaton} className="header__option">
-            <span className="header__optionLineOne">Hello {!user ? 'Guest' : user.email}</span>
-            <span className="header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
+          <div onClick={handleAuthenticaton} className="header-option">
+            <span className="header-optionLineOne">Hello {!user ? 'Guest' : user.email}</span>
+            <span className="header-optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
           </div>
         </Link>
 
         <Link to='/orders'>
-          <div className="header__option">
-            <span className="header__optionLineOne">Returns</span>
-            <span className="header__optionLineTwo">& Orders</span>
+          <div className="header-option">
+            <span className="header-optionLineOne">Returns</span>
+            <span className="header-optionLineTwo">& Orders</span>
           </div>
         </Link>
         
 
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Prime</span>
+        <div className="header-option">
+          <span className="header-optionLineOne">Your</span>
+          <span className="header-optionLineTwo">Prime</span>
         </div>
 
         <Link to="/checkout">
-          <div className="header__optionBasket">
+          <div className="header-optionBasket">
             <ShoppingBasketIcon />
-            <span className="header__optionLineTwo header__basketCount">
+            <span className="header-optionLineTwo header-basketCount">
               {basket?.length}
             </span>
           </div>
