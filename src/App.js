@@ -37,7 +37,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Navigate to="/checkout" />} />
+          <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/home" element={<Home />} />
         </Routes>
